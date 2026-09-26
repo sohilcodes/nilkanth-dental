@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilkanth Dental Clinic & Implant Centre | Dr. Kaushik Raval | Ahmedabad</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans Gujarati"', 'sans-serif'],
+            gujarati: ['"Noto Sans Gujarati"', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              50: '#eff9fa',
+              100: '#d7eff2',
+              200: '#b4e1e6',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              teal: '#0d9488',
+              emerald: '#10b981'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Slider & Scrollbar styling */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    .glow-effect {
+      box-shadow: 0 10px 30px -10px rgba(13, 148, 136, 0.25);
+    }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-teal-500 selection:text-white">
+
+  <div class="bg-gradient-to-r from-slate-900 via-brand-800 to-slate-900 text-white text-xs sm:text-sm py-2 px-4 shadow-sm border-b border-slate-700/50">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-3">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 animate-pulse">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5"></span> Open Today till 8:30 PM
+        </span>
+        <span class="hidden md:inline text-slate-300">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-slate-300">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-teal-400"></i>
+          Ghodasar (Smruti Mandir Rd) &amp; South Bopal, Ahmedabad
+        </span>
+      </div>
+      
+      <div class="flex items-center space-x-4">
+        <a href="tel:+919426754966" class="flex items-center gap-1.5 text-teal-300 hover:text-white transition font-medium">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+          <span>+91 94267 54966</span>
+        </a>
+        <button onclick="toggleLanguage()" id="langBadge" class="bg-white/10 hover:bg-white/20 text-white text-xs px-2.5 py-1 rounded-md transition font-medium border border-white/20 flex items-center gap-1">
+          <i data-lucide="languages" class="w-3 h-3"></i>
+          <span id="langText">ગુજરાતી</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Clinic Logo & Brand Identity -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-teal-600 to-sky-500 flex items-center justify-center text-white shadow-md shadow-teal-500/20 group-hover:scale-105 transition-transform duration-200">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 group-hover:text-teal-700 transition">
+              NILKANTH <span class="text-teal-600 font-extrabold">DENTAL</span>
+            </h1>
+            <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] uppercase font-bold tracking-wider rounded bg-teal-50 text-teal-700 border border-teal-200">
+              Est. 2012
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 font-medium">
+            <span class="text-teal-700 font-gujarati">નીલકંઠ દાંતનું દવાખાનું</span> • Dr. Kaushik Raval
+          </p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-600">
+        <a href="#services" class="hover:text-teal-600 transition">Treatments</a>
+        <a href="#calculator" class="hover:text-teal-600 transition">Cost Estimator</a>
+        <a href="#transformation" class="hover:text-teal-600 transition">Smile Gallery</a>
+        <a href="#portal" class="hover:text-teal-600 transition flex items-center gap-1.5 text-slate-700 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-teal-500"></span> Patient Portal
+        </a>
+        <a href="#reviews" class="hover:text-teal-600 transition flex items-center gap-1">
+          <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+          <span>4.9 (299+ Reviews)</span>
+        </a>
+        <a href="#branches" class="hover:text-teal-600 transition">Clinics</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center space-x-3">
+        <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-700 hover:to-sky-700 text-white font-semibold text-sm shadow-md shadow-teal-500/25 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center gap-2">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Book Appointment</span>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" aria-label="Toggle Navigation">
+        <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3">
+      <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-teal-600">Treatments &amp; Implants</a>
+      <a href="#calculator" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-teal-600">Smile Cost Estimator</a>
+      <a href="#transformation" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-teal-600">Before &amp; After Transformations</a>
+      <a href="#portal" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-teal-600">Patient SaaS Portal Demo</a>
+      <a href="#reviews" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-teal-600">Patient Reviews (4.9⭐)</a>
+      <a href="#branches" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-teal-600">Clinic Addresses &amp; Hours</a>
+      <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+        <button onclick="openBookingModal(); toggleMobileMenu();" class="w-full py-3 rounded-xl bg-teal-600 text-white font-semibold text-center flex items-center justify-center gap-2">
+          <i data-lucide="calendar" class="w-4 h-4"></i> Book Instant Appointment
+        </button>
+        <a href="https://wa.me/919426754966" target="_blank" class="w-full py-2.5 rounded-xl border border-emerald-500 text-emerald-700 font-semibold text-center flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden pt-8 pb-16 lg:pt-16 lg:pb-24 bg-gradient-to-b from-brand-50/70 via-white to-slate-50">
+    <!-- Background subtle glows -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-teal-200/30 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-80 h-80 bg-sky-200/30 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Rating Pill -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-teal-100 shadow-sm">
+            <div class="flex items-center text-amber-400">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <span class="text-xs sm:text-sm font-bold text-slate-800">4.9 / 5.0</span>
+            <span class="text-xs text-slate-400">|</span>
+            <span class="text-xs font-semibold text-teal-800">299+ Google Verified Reviews</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
+            Advanced Care. <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-sky-600 to-teal-800">
+              Beautiful Smiles.
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Led by <strong class="text-slate-900 font-semibold">Dr. Kaushik Raval</strong>, providing gentle, pain-free dental implants, root canal treatments, smile design, and orthodontic care in Ahmedabad since <span class="text-teal-700 font-semibold">2012</span>.
+          </p>
+
+          <!-- Branch Quick Selector Pill -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-teal-50 border border-teal-200/70 text-xs font-semibold text-teal-900">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-teal-600"></i> Ghodasar (Main Clinic)
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-50 border border-sky-200/70 text-xs font-semibold text-sky-900">
+              <i data-lucide="building" class="w-3.5 h-3.5 text-sky-600"></i> South Bopal (Branch Clinic)
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200/70 text-xs font-semibold text-emerald-900">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-600"></i> 100% Sterile &amp; Painless
+            </span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+            <button onclick="openBookingModal()" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-700 hover:to-sky-700 text-white font-bold shadow-lg shadow-teal-600/30 hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-3">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              <span>Book Appointment Now</span>
+            </button>
+            <a href="https://wa.me/919426754966?text=Hello%20Dr.%20Kaushik%20Raval,%20I%20would%20like%20to%20consult%20for%20dental%20treatment." target="_blank" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 font-semibold shadow-sm hover:border-emerald-300 hover:text-emerald-700 transition flex items-center justify-center gap-2">
+              <i data-lucide="message-square" class="w-5 h-5 text-emerald-600"></i>
+              <span>Instant WhatsApp Chat</span>
+            </a>
+          </div>
+
+          <!-- Key Metrics Grid -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/80">
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">14+</div>
+              <div class="text-xs text-slate-500 font-medium">Years of Excellence</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-teal-600">12,000+</div>
+              <div class="text-xs text-slate-500 font-medium">Smiles Restored</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-sky-600">4.9 ★</div>
+              <div class="text-xs text-slate-500 font-medium">Google Rating</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visuals with Clinical Imagery -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Main Hero Image (Modern Clinic & Doctor) -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 aspect-[4/5] glow-effect">
+              <img 
+                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" 
+                alt="Modern Nilkanth Dental Clinic Operatory" 
+                class="w-full h-full object-cover"
+                onerror="this.src='https://placehold.co/800x1000/0284c7/ffffff?text=Nilkanth+Dental+Operatory'"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+
+              <!-- Overlaid Doctor Tag -->
+              <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl glass-card border border-white/40 shadow-lg text-slate-900">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-teal-500">
+                      <img 
+                        src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=300&q=80" 
+                        alt="Dr. Kaushik Raval" 
+                        class="w-full h-full object-cover"
+                        onerror="this.src='https://placehold.co/150x150/0d9488/ffffff?text=Dr+Kaushik'"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-sm text-slate-900">Dr. Kaushik Raval</h4>
+                      <p class="text-xs text-teal-700 font-semibold">Chief Dental Surgeon &amp; Implantologist</p>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center justify-center p-2 rounded-lg bg-teal-50 text-teal-700">
+                    <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Micro Card 1: Painless Tech -->
+            <div class="absolute -top-6 -left-6 bg-white p-3.5 rounded-2xl shadow-xl border border-slate-100 flex items-center space-x-3 hidden sm:flex animate-bounce duration-1000" style="animation-duration: 4s;">
+              <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center text-teal-600">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-800">Single-Sitting RCT</p>
+                <p class="text-[11px] text-slate-500">Zero Pain Protocol</p>
+              </div>
+            </div>
+
+            <!-- Floating Micro Card 2: Affordable Rate -->
+            <div class="absolute -bottom-5 -right-5 bg-white p-3.5 rounded-2xl shadow-xl border border-slate-100 flex items-center space-x-3 hidden sm:flex">
+              <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600">
+                <i data-lucide="badge-percent" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-slate-800">Affordable Pricing</p>
+                <p class="text-[11px] text-slate-500">Transparent Costing</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-20 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+          World-Class Dental Solutions
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight">
+          Comprehensive Dental Care Under One Roof
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          From painless root canals to titanium implants and smile makeovers, experience cutting-edge technology paired with empathetic care.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Dental Implants -->
+        <div class="group bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 hover:border-teal-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="relative rounded-xl overflow-hidden mb-5 h-48 bg-slate-200">
+              <img 
+                src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=700&q=80" 
+                alt="Dental Implants" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://placehold.co/600x400/0284c7/ffffff?text=Dental+Implants'"
+              />
+              <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-xs font-bold text-teal-800 px-2.5 py-1 rounded-md shadow-sm">
+                Permanent Solution
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 flex items-center justify-between">
+              <span>Dental Implants</span>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-teal-600 opacity-0 group-hover:opacity-100 transition"></i>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Permanent titanium teeth replacements designed to replicate natural root strength, chewing capacity, and facial structure aesthetics.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Lifetime Durability Option</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Computer-guided Precision</li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Dental Implants')" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-teal-600 hover:bg-teal-50 text-slate-700 hover:text-teal-700 font-semibold text-xs tracking-wide transition">
+            Book Implant Consultation →
+          </button>
+        </div>
+
+        <!-- Service 2: Root Canal Treatment (Painless) -->
+        <div class="group bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 hover:border-teal-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="relative rounded-xl overflow-hidden mb-5 h-48 bg-slate-200">
+              <img 
+                src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80" 
+                alt="Root Canal Treatment" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://placehold.co/600x400/0284c7/ffffff?text=Root+Canal+Treatment'"
+              />
+              <span class="absolute top-3 left-3 bg-teal-600 text-xs font-bold text-white px-2.5 py-1 rounded-md shadow-sm">
+                Most Requested (16+ Reviews)
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 flex items-center justify-between">
+              <span>Painless Root Canal (RCT)</span>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-teal-600 opacity-0 group-hover:opacity-100 transition"></i>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Advanced rotary endodontics preserving your natural tooth with zero discomfort. Single-sitting treatments available with digital apex locators.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Single-visit rotary endodontics</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Custom Zirconia / Ceramic Crowns</li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Root Canal Treatment')" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-teal-600 hover:bg-teal-50 text-slate-700 hover:text-teal-700 font-semibold text-xs tracking-wide transition">
+            Book Pain-Free RCT →
+          </button>
+        </div>
+
+        <!-- Service 3: Braces & Invisible Aligners -->
+        <div class="group bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 hover:border-teal-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="relative rounded-xl overflow-hidden mb-5 h-48 bg-slate-200">
+              <img 
+                src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80" 
+                alt="Orthodontic Braces and Aligners" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://placehold.co/600x400/0284c7/ffffff?text=Braces+and+Aligners'"
+              />
+              <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-xs font-bold text-sky-800 px-2.5 py-1 rounded-md shadow-sm">
+                Teens &amp; Adults
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 flex items-center justify-between">
+              <span>Braces &amp; Clear Aligners</span>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-teal-600 opacity-0 group-hover:opacity-100 transition"></i>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Straighten crooked teeth, eliminate gaps, and correct bite misalignment with discreet clear aligners or high-grade ceramic/metal braces.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Invisible Removable Aligners</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Low friction comfort wires</li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Braces & Orthodontics')" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-teal-600 hover:bg-teal-50 text-slate-700 hover:text-teal-700 font-semibold text-xs tracking-wide transition">
+            Book Alignment Scan →
+          </button>
+        </div>
+
+        <!-- Service 4: Teeth Whitening & Cosmetic Smile Design -->
+        <div class="group bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 hover:border-teal-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="relative rounded-xl overflow-hidden mb-5 h-48 bg-slate-200">
+              <img 
+                src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=700&q=80" 
+                alt="Teeth Whitening" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://placehold.co/600x400/0284c7/ffffff?text=Teeth+Whitening'"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 flex items-center justify-between">
+              <span>Teeth Whitening &amp; Veneers</span>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-teal-600 opacity-0 group-hover:opacity-100 transition"></i>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Laser teeth whitening that brightens teeth up to 6 shades in under 45 minutes, plus ultrathin porcelain composite veneers.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Stain-removal laser technology</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Enamel-safe formulation</li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Teeth Whitening')" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-teal-600 hover:bg-teal-50 text-slate-700 hover:text-teal-700 font-semibold text-xs tracking-wide transition">
+            Book Whitening Session →
+          </button>
+        </div>
+
+        <!-- Service 5: Pain-Free Teeth Removal / Extractions -->
+        <div class="group bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 hover:border-teal-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="relative rounded-xl overflow-hidden mb-5 h-48 bg-slate-200">
+              <img 
+                src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80" 
+                alt="Teeth Removal" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://placehold.co/600x400/0284c7/ffffff?text=Teeth+Removal'"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 flex items-center justify-between">
+              <span>Gentle Teeth Removal</span>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-teal-600 opacity-0 group-hover:opacity-100 transition"></i>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Gentle extraction of severely decayed teeth and impacted wisdom teeth using atraumatic micro-instruments for expedited healing.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Quick recovery protocol</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Wisdom tooth surgical precision</li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('Teeth Removal')" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-teal-600 hover:bg-teal-50 text-slate-700 hover:text-teal-700 font-semibold text-xs tracking-wide transition">
+            Book Removal Consultation →
+          </button>
+        </div>
+
+        <!-- Service 6: General & Preventive Dentistry -->
+        <div class="group bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 hover:border-teal-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="relative rounded-xl overflow-hidden mb-5 h-48 bg-slate-200">
+              <img 
+                src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=700&q=80" 
+                alt="General Dentistry" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://placehold.co/600x400/0284c7/ffffff?text=General+Dentistry'"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 flex items-center justify-between">
+              <span>General &amp; Family Dentistry</span>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-teal-600 opacity-0 group-hover:opacity-100 transition"></i>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Ultrasonic scaling, pediatric sealants, natural tooth-colored composite fillings, and annual diagnostic checkups for the whole family.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Ultrasonic Deep Cleaning</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Seamless Composite Restorations</li>
+            </ul>
+          </div>
+          <button onclick="openBookingModal('General Dentistry')" class="w-full py-2.5 rounded-xl border border-slate-300 hover:border-teal-600 hover:bg-teal-50 text-slate-700 hover:text-teal-700 font-semibold text-xs tracking-wide transition">
+            Book Routine Checkup →
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="transformation" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-teal-400 bg-teal-950/80 border border-teal-800/80 px-3 py-1 rounded-full">
+          Real Results
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-3">
+          Interactive Smile Transformations
+        </h2>
+        <p class="text-slate-400 mt-2 text-sm sm:text-base">
+          Drag the interactive slider below to see the dramatic difference created by Dr. Kaushik Raval's clinical expertise.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto bg-slate-800/60 rounded-3xl p-4 sm:p-8 border border-slate-700 shadow-2xl backdrop-blur-sm">
+        
+        <!-- Interactive Split Screen Slider -->
+        <div class="relative w-full aspect-[16/9] sm:aspect-[21/9] rounded-2xl overflow-hidden select-none cursor-ew-resize" id="sliderContainer" onmousemove="handleSliderMove(event)" ontouchmove="handleSliderTouch(event)">
+          
+          <!-- AFTER Image (Background) -->
+          <div class="absolute inset-0 w-full h-full">
+            <img 
+              src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80" 
+              alt="After Dental Procedure - Perfect White Teeth" 
+              class="w-full h-full object-cover"
+              onerror="this.src='https://placehold.co/1200x600/0284c7/ffffff?text=After+Restoration'"
+            />
+            <div class="absolute top-4 right-4 bg-teal-600/90 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">
+              AFTER (Treatment Complete)
+            </div>
+          </div>
+
+          <!-- BEFORE Image (Foreground Clip) -->
+          <div id="beforeClip" class="absolute inset-y-0 left-0 overflow-hidden w-1/2 border-r-2 border-white shadow-[0_0_20px_rgba(0,0,0,0.6)]">
+            <img 
+              src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=80" 
+              alt="Before Dental Procedure" 
+              class="absolute inset-y-0 left-0 max-w-none h-full w-[100vw] max-w-[832px] object-cover filter contrast-125 brightness-90"
+              onerror="this.src='https://placehold.co/1200x600/334155/ffffff?text=Before+Treatment'"
+            />
+            <div class="absolute top-4 left-4 bg-slate-900/90 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">
+              BEFORE (Initial State)
+            </div>
+          </div>
+
+          <!-- Divider Handle -->
+          <div id="sliderHandle" class="absolute top-0 bottom-0 left-1/2 -ml-4 flex items-center justify-center pointer-events-none">
+            <div class="w-8 h-8 rounded-full bg-white text-slate-900 shadow-xl flex items-center justify-center border-2 border-teal-500">
+              <i data-lucide="chevrons-left-right" class="w-4 h-4"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Instructions and Case Info -->
+        <div class="mt-6 flex flex-wrap items-center justify-between gap-4 text-xs sm:text-sm text-slate-300">
+          <div class="flex items-center gap-2">
+            <i data-lucide="info" class="w-4 h-4 text-teal-400"></i>
+            <span>Case Study: Full mouth ceramic bridge restoration &amp; gingival alignment.</span>
+          </div>
+          <div class="flex items-center gap-2 text-teal-300 font-semibold">
+            <i data-lucide="clock" class="w-4 h-4"></i>
+            <span>Completed in only 3 visits</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="calculator" class="py-20 bg-gradient-to-b from-slate-50 via-teal-50/20 to-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-teal-700 bg-teal-100/70 border border-teal-200 px-3 py-1 rounded-full">
+          SaaS Dental Calculator
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Instant Smile Cost Estimator
+        </h2>
+        <p class="text-slate-600 mt-2 text-sm sm:text-base">
+          Get an immediate, transparent cost projection tailored to Nilkanth Dental Clinic's affordable rates in Ahmedabad.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Controls Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">1. Select Desired Treatment</label>
+            <div class="grid grid-cols-2 gap-3" id="treatmentOptionGroup">
+              <button onclick="selectCalculatorTreatment('rct', 3500, 'Single Sitting Root Canal + Crown')" class="calc-btn active text-left p-3.5 rounded-xl border border-teal-600 bg-teal-50 text-slate-900 font-semibold text-xs sm:text-sm transition flex flex-col justify-between" data-type="rct">
+                <span>Root Canal (RCT)</span>
+                <span class="text-xs text-teal-700 font-bold mt-1">From ₹3,500</span>
+              </button>
+              <button onclick="selectCalculatorTreatment('implant', 18000, 'Titanium Dental Implant + Abutment')" class="calc-btn text-left p-3.5 rounded-xl border border-slate-200 hover:border-teal-400 text-slate-900 font-semibold text-xs sm:text-sm transition flex flex-col justify-between" data-type="implant">
+                <span>Dental Implant</span>
+                <span class="text-xs text-teal-700 font-bold mt-1">From ₹18,000</span>
+              </button>
+              <button onclick="selectCalculatorTreatment('aligners', 25000, 'Orthodontic Braces / Clear Aligners')" class="calc-btn text-left p-3.5 rounded-xl border border-slate-200 hover:border-teal-400 text-slate-900 font-semibold text-xs sm:text-sm transition flex flex-col justify-between" data-type="aligners">
+                <span>Braces / Aligners</span>
+                <span class="text-xs text-teal-700 font-bold mt-1">From ₹25,000</span>
+              </button>
+              <button onclick="selectCalculatorTreatment('whitening', 4500, 'Laser In-Office Teeth Whitening')" class="calc-btn text-left p-3.5 rounded-xl border border-slate-200 hover:border-teal-400 text-slate-900 font-semibold text-xs sm:text-sm transition flex flex-col justify-between" data-type="whitening">
+                <span>Teeth Whitening</span>
+                <span class="text-xs text-teal-700 font-bold mt-1">From ₹4,500</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quantity / Units slider -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-xs font-bold uppercase tracking-wider text-slate-700">2. Number of Teeth / Sessions</label>
+              <span id="teethCountDisplay" class="font-extrabold text-teal-700 bg-teal-50 px-2 py-0.5 rounded text-sm">1 Unit</span>
+            </div>
+            <input 
+              type="range" 
+              id="teethCountSlider" 
+              min="1" 
+              max="6" 
+              value="1" 
+              class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-teal-600"
+              oninput="updateCalculatorCost()"
+            />
+            <div class="flex justify-between text-[11px] text-slate-400 mt-1 font-medium">
+              <span>1 Tooth</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>Full Arch (6+)</span>
+            </div>
+          </div>
+
+          <!-- Addon options -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">3. Recommended Add-ons</label>
+            <div class="space-y-2">
+              <label class="flex items-center space-x-3 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer text-xs sm:text-sm text-slate-700">
+                <input type="checkbox" id="addonXray" checked onchange="updateCalculatorCost()" class="rounded text-teal-600 focus:ring-teal-500 w-4 h-4">
+                <span class="flex-1 font-medium">Digital RVG High-Resolution X-Ray</span>
+                <span class="text-teal-700 font-bold">+₹300</span>
+              </label>
+              <label class="flex items-center space-x-3 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer text-xs sm:text-sm text-slate-700">
+                <input type="checkbox" id="addonCleaning" onchange="updateCalculatorCost()" class="rounded text-teal-600 focus:ring-teal-500 w-4 h-4">
+                <span class="flex-1 font-medium">Full Mouth Ultrasonic Scaling &amp; Polishing</span>
+                <span class="text-teal-700 font-bold">+₹1,200</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estimate Summary Panel -->
+        <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 flex flex-col justify-between shadow-xl">
+          <div>
+            <div class="flex items-center justify-between border-b border-slate-700 pb-4 mb-4">
+              <span class="text-xs uppercase tracking-wider font-semibold text-teal-400">Estimated Quote</span>
+              <span class="text-xs bg-emerald-500/20 text-emerald-300 font-semibold px-2 py-0.5 rounded-full border border-emerald-500/30">
+                Affordable Rate Guarantee
+              </span>
+            </div>
+
+            <div class="space-y-3 mb-6">
+              <div class="text-xs text-slate-400">Selected Treatment:</div>
+              <div id="summaryTreatmentName" class="font-bold text-slate-100 text-sm">Single Sitting Root Canal + Crown</div>
+              <div class="flex justify-between text-xs text-slate-400 pt-2">
+                <span>Quantity:</span>
+                <span id="summaryUnits" class="text-slate-200 font-semibold">1 unit</span>
+              </div>
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>Digital Diagnostics &amp; Add-ons:</span>
+                <span id="summaryAddons" class="text-slate-200 font-semibold">₹300</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-700">
+              <div class="text-xs text-slate-400 mb-1">Estimated Total Investment</div>
+              <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-emerald-400" id="totalEstimatedCost">
+                ₹3,800*
+              </div>
+              <p class="text-[11px] text-slate-400 mt-2 italic">
+                *Approximate cost based on clinical conditions. Exact quotation provided following in-person oral checkup with Dr. Kaushik Raval.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-6 space-y-2">
+            <button onclick="bookWithEstimate()" class="w-full py-3 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-slate-950 font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4"></i> Lock In This Estimate &amp; Book
+            </button>
+            <p class="text-center text-[11px] text-slate-400">No advance payment required. Pay at clinic.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="portal" class="py-20 bg-slate-100/80 border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-sky-700 bg-sky-100 border border-sky-200 px-3 py-1 rounded-full">
+          Cloud Dental Records
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Nilkanth SaaS Patient Portal
+        </h2>
+        <p class="text-slate-600 mt-2 text-sm sm:text-base">
+          Every patient at Nilkanth Dental Clinic gets secure digital access to HD X-Rays, ongoing treatment timeline, and verified prescriptions on their smartphone.
+        </p>
+      </div>
+
+      <!-- Mock SaaS Dashboard Card -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+        
+        <!-- Portal Nav / Tab Header -->
+        <div class="bg-slate-900 text-white px-6 py-4 flex flex-wrap items-center justify-between gap-4 border-b border-slate-800">
+          <div class="flex items-center space-x-3">
+            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+            <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+            <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+            <span class="text-xs text-slate-400 ml-2 font-mono">portal.nilkanthdental.in/patient/view?id=AHM-2026-9426</span>
+          </div>
+          <div class="flex items-center space-x-2 text-xs">
+            <span class="px-2 py-1 rounded bg-teal-500/20 text-teal-300 font-semibold">Live Patient Record</span>
+            <span class="text-slate-400">Dr. Kaushik Raval Attending</span>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          <!-- Patient Summary & Quick Info -->
+          <div class="lg:col-span-4 border-r border-slate-100 pr-0 lg:pr-8 space-y-6">
+            <div class="flex items-center space-x-4">
+              <div class="w-14 h-14 rounded-2xl bg-teal-100 text-teal-800 font-extrabold flex items-center justify-center text-lg shadow-inner">
+                HG
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Heena Gajjar</h4>
+                <p class="text-xs text-slate-500">Patient ID: #ND-8842 • Ghodasar</p>
+                <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-50 text-emerald-700">
+                  <i data-lucide="check" class="w-3 h-3 mr-1"></i> Treatment In-Progress
+                </div>
+              </div>
+            </div>
+
+            <!-- Treatment Milestones -->
+            <div class="space-y-4 pt-4 border-t border-slate-100">
+              <h5 class="text-xs font-bold uppercase tracking-wider text-slate-500">Active Care Plan</h5>
+              
+              <div class="relative pl-6 space-y-5 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-200">
+                <div class="relative">
+                  <div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-4 ring-white"></div>
+                  <p class="text-xs font-bold text-slate-800">Initial Diagnostic &amp; RVG X-Ray</p>
+                  <p class="text-[11px] text-slate-500">Completed with Dr. Kaushik Raval</p>
+                </div>
+                <div class="relative">
+                  <div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-4 ring-white"></div>
+                  <p class="text-xs font-bold text-slate-800">Rotary Canal Biomechanical Prep</p>
+                  <p class="text-[11px] text-slate-500">Painless treatment • Tooth #16 &amp; #17</p>
+                </div>
+                <div class="relative">
+                  <div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-teal-500 ring-4 ring-white animate-pulse"></div>
+                  <p class="text-xs font-bold text-teal-700">Zirconia Crown Placement</p>
+                  <p class="text-[11px] text-slate-500">Scheduled for Tomorrow 6:30 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 bg-teal-50/60 rounded-2xl border border-teal-100">
+              <div class="flex items-center justify-between text-xs font-semibold text-teal-900 mb-1">
+                <span>Care Coordinator</span>
+                <span class="text-teal-700">+91 94267 54966</span>
+              </div>
+              <p class="text-[11px] text-teal-700 leading-tight">
+                Direct WhatsApp assistance active for post-op healing questions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Digital Diagnostics & Radiography Viewer -->
+          <div class="lg:col-span-8 space-y-6">
+            <div class="flex items-center justify-between">
+              <div>
+                <h5 class="font-bold text-slate-900 text-sm">High-Definition Digital Radiography (RVG)</h5>
+                <p class="text-xs text-slate-500">Recorded at Muktjivan Complex Clinic Operatory 1</p>
+              </div>
+              <button onclick="downloadMockXray()" class="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-1.5 transition">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Export PDF
+              </button>
+            </div>
+
+            <!-- Radiography Screen Mockup -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Digital X-Ray 1 -->
+              <div class="relative rounded-2xl overflow-hidden bg-slate-950 aspect-[4/3] border border-slate-800 group">
+                <img 
+                  src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" 
+                  alt="Dental Radiography Scan" 
+                  class="w-full h-full object-cover filter grayscale contrast-150 brightness-90 group-hover:scale-105 transition"
+                  onerror="this.src='https://placehold.co/600x450/0f172a/ffffff?text=RVG+Dental+X-Ray'"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] text-slate-300">
+                  <span class="font-mono text-teal-300">SCAN_#049_CANINE.DCM</span>
+                  <span class="bg-black/60 px-2 py-0.5 rounded font-mono">0.02 mSv</span>
+                </div>
+              </div>
+
+              <!-- Digital Prescription & Treatment Progress -->
+              <div class="rounded-2xl border border-slate-200 p-4 flex flex-col justify-between bg-slate-50/50">
+                <div>
+                  <div class="flex items-center justify-between text-xs font-bold text-slate-700 border-b border-slate-200 pb-2 mb-3">
+                    <span>E-PRESCRIPTION</span>
+                    <span class="text-teal-700">Dr. Kaushik Raval</span>
+                  </div>
+                  <ul class="text-xs space-y-2 text-slate-600">
+                    <li class="flex items-start justify-between">
+                      <div>
+                        <span class="font-semibold text-slate-800">Amoxicillin 500mg</span>
+                        <p class="text-[11px] text-slate-400">1 tablet after food • 3 times / day</p>
+                      </div>
+                      <span class="text-xs text-teal-700 font-bold">5 Days</span>
+                    </li>
+                    <li class="flex items-start justify-between">
+                      <div>
+                        <span class="font-semibold text-slate-800">Zerodol-SP</span>
+                        <p class="text-[11px] text-slate-400">Pain relief as needed</p>
+                      </div>
+                      <span class="text-xs text-teal-700 font-bold">SOS</span>
+                    </li>
+                    <li class="flex items-start justify-between">
+                      <div>
+                        <span class="font-semibold text-slate-800">Chlorhexidine Mouthrinse</span>
+                        <p class="text-[11px] text-slate-400">Gargle 10ml twice daily</p>
+                      </div>
+                      <span class="text-xs text-teal-700 font-bold">14 Days</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-3 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                  <span>Authorized Digital Signature</span>
+                  <span class="text-emerald-700 font-bold flex items-center gap-1">
+                    <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Verified
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="reviews" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Review Header & Aggregate Rating -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold mb-3">
+            <i data-lucide="check-check" class="w-3.5 h-3.5 text-amber-600"></i> Google Maps Verified Reviews
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Why Ahmedabad Trusts Dr. Kaushik Raval
+          </h2>
+          <p class="text-slate-600 mt-2 text-sm sm:text-base">
+            Real feedback from 299+ treated patients across Ghodasar, South Bopal, and Kankaria.
+          </p>
+        </div>
+
+        <!-- Rating Box -->
+        <div class="flex items-center space-x-4 bg-slate-50 border border-slate-200 p-4 rounded-2xl">
+          <div class="text-4xl font-extrabold text-slate-900">4.9</div>
+          <div>
+            <div class="flex text-amber-400">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-xs font-semibold text-slate-600 mt-0.5">Based on 299 Reviews</p>
+            <p class="text-[11px] text-teal-700 font-bold">100% Verified Google Feedback</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Category Filters (Directly from provided Google snippet) -->
+      <div class="flex flex-wrap items-center gap-2 mb-8">
+        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider mr-2">Sort By Topic:</span>
+        <button onclick="filterReviews('all')" class="review-filter active px-3.5 py-1.5 rounded-full text-xs font-bold border transition bg-slate-900 text-white border-slate-900" data-category="all">
+          All (299)
+        </button>
+        <button onclick="filterReviews('rct')" class="review-filter px-3.5 py-1.5 rounded-full text-xs font-semibold border transition bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200" data-category="rct">
+          Root canal treatment (16)
+        </button>
+        <button onclick="filterReviews('friendly')" class="review-filter px-3.5 py-1.5 rounded-full text-xs font-semibold border transition bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200" data-category="friendly">
+          Friendly nature (21)
+        </button>
+        <button onclick="filterReviews('price')" class="review-filter px-3.5 py-1.5 rounded-full text-xs font-semibold border transition bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200" data-category="price">
+          Affordable rate (10)
+        </button>
+        <button onclick="filterReviews('removal')" class="review-filter px-3.5 py-1.5 rounded-full text-xs font-semibold border transition bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200" data-category="removal">
+          Teeth removal (4)
+        </button>
+      </div>
+
+      <!-- Testimonial Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="reviewCardsGrid">
+        
+        <!-- Review 1: Heena Gajjar -->
+        <div class="review-card bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between hover:shadow-lg transition-all" data-tags="friendly rct">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm">
+                  HG
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 text-sm">Heena Gajjar</h4>
+                  <p class="text-[11px] text-slate-400">1 review • Local Guide</p>
+                </div>
+              </div>
+              <div class="flex text-amber-400">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              </div>
+            </div>
+
+            <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
+              "Dr. Kaushik Raval is an exceptional doctor who combines outstanding medical expertise with genuine compassion. He is kind, humble, and always takes the time to listen to his patients. His caring nature and attention to detail make every treatment feel reassuring and safe."
+            </p>
+          </div>
+
+          <!-- Owner Response -->
+          <div class="mt-4 pt-4 border-t border-slate-200/80 bg-white/70 -mx-3 -mb-3 p-3 rounded-xl text-xs text-slate-600">
+            <div class="font-semibold text-teal-800 flex items-center gap-1 mb-1">
+              <i data-lucide="corner-down-right" class="w-3 h-3"></i> Response from Dr. Kaushik Raval:
+            </div>
+            <p class="text-[11px] text-slate-500 italic">
+              "Thank you so much for your wonderful review! We truly appreciate your kind words and support. We’re glad you had a great experience and look forward to welcoming you again. 😊"
+            </p>
+          </div>
+        </div>
+
+        <!-- Review 2: Meghana Kalwani -->
+        <div class="review-card bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between hover:shadow-lg transition-all" data-tags="removal friendly">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-sky-600 text-white font-bold flex items-center justify-center text-sm">
+                  MK
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 text-sm">Meghana Kalwani</h4>
+                  <p class="text-[11px] text-slate-400">3 reviews • Ahmedabad</p>
+                </div>
+              </div>
+              <div class="flex text-amber-400">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              </div>
+            </div>
+
+            <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
+              "I visited Dr. Kaushik Raval for my dental treatment and I had a very good experience. The doctor is kind, patient and explains everything clearly. My tooth removal was done smoothly and with very less pain. Highly recommend Nilkanth Dental Clinic!"
+            </p>
+          </div>
+
+          <!-- Owner Response -->
+          <div class="mt-4 pt-4 border-t border-slate-200/80 bg-white/70 -mx-3 -mb-3 p-3 rounded-xl text-xs text-slate-600">
+            <div class="font-semibold text-teal-800 flex items-center gap-1 mb-1">
+              <i data-lucide="corner-down-right" class="w-3 h-3"></i> Response from Dr. Kaushik Raval:
+            </div>
+            <p class="text-[11px] text-slate-500 italic">
+              "Thank you Meghana ji 😊 Always happy to provide gentle, painless treatments!"
+            </p>
+          </div>
+        </div>
+
+        <!-- Review 3: Sneha Shekhavat -->
+        <div class="review-card bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between hover:shadow-lg transition-all" data-tags="rct price">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">
+                  SS
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 text-sm">Sneha Shekhavat</h4>
+                  <p class="text-[11px] text-slate-400">1 review • Verified Patient</p>
+                </div>
+              </div>
+              <div class="flex text-amber-400">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+              </div>
+            </div>
+
+            <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
+              "I had an excellent experience with my full dental treatment here – including braces, root canal, and composite fillings. My braces treatment gave excellent result. The root canal procedure was painless, and the composite fillings look completely natural. Highly recommend this clinic!"
+            </p>
+          </div>
+
+          <!-- Owner Response -->
+          <div class="mt-4 pt-4 border-t border-slate-200/80 bg-white/70 -mx-3 -mb-3 p-3 rounded-xl text-xs text-slate-600">
+            <div class="font-semibold text-teal-800 flex items-center gap-1 mb-1">
+              <i data-lucide="corner-down-right" class="w-3 h-3"></i> Response from Dr. Kaushik Raval:
+            </div>
+            <p class="text-[11px] text-slate-500 italic">
+              "Thank you Sneha! 😊 It was a pleasure crafting your complete new smile!"
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="https://maps.google.com" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-teal-700 hover:text-teal-800 transition">
+          <span>Read all 299+ Verified Reviews on Google Maps</span>
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="branches" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-teal-400 bg-teal-950 px-3 py-1 rounded-full border border-teal-800">
+          Two Convenient Locations in Ahmedabad
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-3">
+          Visit Nilkanth Dental Clinic
+        </h2>
+        <p class="text-slate-400 mt-2 text-sm sm:text-base">
+          Our main flagship facility in Ghodasar and branch center in South Bopal feature sterilisation labs and modern diagnostics.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Branch 1: Main Clinic (Ghodasar) -->
+        <div class="lg:col-span-6 bg-slate-800/80 border border-slate-700 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 font-bold text-xs border border-teal-500/30">
+                MAIN CLINIC (Flagship)
+              </span>
+              <span class="text-xs font-mono text-emerald-400 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Closes 8:30 PM
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white">Ghodasar, Ahmedabad</h3>
+            <p class="text-teal-300 text-sm font-gujarati font-semibold">નીલકંઠ દાંતનું દવાખાનું - ઘોડાસર</p>
+            
+            <div class="space-y-3 pt-2 text-xs sm:text-sm text-slate-300">
+              <div class="flex items-start gap-3">
+                <i data-lucide="map-pin" class="w-5 h-5 text-teal-400 shrink-0 mt-0.5"></i>
+                <span>
+                  <strong>Shop No.16, Muktjivan Complex</strong>, 16, Shree Muktajiven Complex, Smruti Mandir Rd, near Sant Shree Bachuram Ashram, Ghodasar, Ahmedabad, Gujarat 380050.
+                  <br><span class="text-slate-400 text-xs">(Located in: Kankaria Maninagar Nagarik Sahakari Bank • Plus Code: XJG6+R9 Ahmedabad)</span>
+                </span>
+              </div>
+              
+              <div class="flex items-center gap-3">
+                <i data-lucide="phone" class="w-5 h-5 text-teal-400 shrink-0"></i>
+                <a href="tel:+919426754966" class="hover:text-white font-bold text-teal-300">+91 94267 54966</a>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i data-lucide="clock" class="w-5 h-5 text-teal-400 shrink-0"></i>
+                <span>Mon – Sat: 9:30 AM – 1:00 PM &amp; 5:00 PM – 8:30 PM | Sun: 10:00 AM – 1:00 PM</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i data-lucide="heart-handshake" class="w-5 h-5 text-teal-400 shrink-0"></i>
+                <span class="text-teal-300 font-semibold">LGBTQ+ Friendly • Wheelchair Accessible</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-slate-700/80 flex flex-wrap gap-3">
+            <a href="https://maps.google.com/?q=Shop+No.16+Muktjivan+Complex+Smruti+Mandir+Rd+Ghodasar+Ahmedabad" target="_blank" class="flex-1 py-3 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs sm:text-sm text-center flex items-center justify-center gap-2 transition">
+              <i data-lucide="navigation" class="w-4 h-4"></i> Get Driving Directions
+            </a>
+            <button onclick="openBookingModal('Ghodasar Clinic')" class="px-5 py-3 rounded-xl bg-slate-700 hover:bg-slate-600 text-white font-semibold text-xs sm:text-sm transition">
+              Book Here
+            </button>
+          </div>
+        </div>
+
+        <!-- Branch 2: South Bopal Clinic -->
+        <div class="lg:col-span-6 bg-slate-800/80 border border-slate-700 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs border border-sky-500/30">
+                BRANCH CLINIC
+              </span>
+              <span class="text-xs font-mono text-emerald-400 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Evening Slots Open
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white">South Bopal, Ahmedabad</h3>
+            <p class="text-sky-300 text-sm font-gujarati font-semibold">નીલકંઠ ડેન્ટલ કેર - સાઉથ બોપલ</p>
+            
+            <div class="space-y-3 pt-2 text-xs sm:text-sm text-slate-300">
+              <div class="flex items-start gap-3">
+                <i data-lucide="map-pin" class="w-5 h-5 text-sky-400 shrink-0 mt-0.5"></i>
+                <span>
+                  <strong>Nilkanth Dental Implant Centre</strong>, High-Street Commercial Hub, South Bopal, Ahmedabad, Gujarat 380058.
+                  <br><span class="text-slate-400 text-xs">Equipped with 3D intraoral scanning and specialized orthodontic suite.</span>
+                </span>
+              </div>
+              
+              <div class="flex items-center gap-3">
+                <i data-lucide="phone" class="w-5 h-5 text-sky-400 shrink-0"></i>
+                <a href="tel:+919426754966" class="hover:text-white font-bold text-sky-300">+91 94267 54966</a>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i data-lucide="clock" class="w-5 h-5 text-sky-400 shrink-0"></i>
+                <span>Mon – Sat: 10:00 AM – 2:00 PM &amp; 5:30 PM – 8:30 PM</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i data-lucide="car" class="w-5 h-5 text-sky-400 shrink-0"></i>
+                <span class="text-sky-300 font-semibold">Valet &amp; Reserved Patient Parking</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-slate-700/80 flex flex-wrap gap-3">
+            <a href="https://maps.google.com/?q=South+Bopal+Ahmedabad+Dental+Clinic" target="_blank" class="flex-1 py-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs sm:text-sm text-center flex items-center justify-center gap-2 transition">
+              <i data-lucide="navigation" class="w-4 h-4"></i> Get Directions
+            </a>
+            <button onclick="openBookingModal('South Bopal Clinic')" class="px-5 py-3 rounded-xl bg-slate-700 hover:bg-slate-600 text-white font-semibold text-xs sm:text-sm transition">
+              Book Here
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div id="bookingModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm hidden p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 max-h-[90vh] overflow-y-auto">
+      
+      <!-- Close Button -->
+      <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 p-1.5 rounded-full hover:bg-slate-100 transition" aria-label="Close modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="mb-6">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-teal-700 bg-teal-50 px-2.5 py-1 rounded-md border border-teal-200">
+          Quick Appointment
+        </span>
+        <h3 class="text-2xl font-bold text-slate-900 mt-2">Book with Dr. Kaushik Raval</h3>
+        <p class="text-xs text-slate-500 mt-1">Confirmed immediately via SMS &amp; WhatsApp</p>
+      </div>
+
+      <form id="bookingForm" onsubmit="handleAppointmentSubmit(event)" class="space-y-4">
+        <!-- Patient Name -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Patient Name</label>
+          <div class="relative">
+            <i data-lucide="user" class="w-4 h-4 absolute left-3.5 top-3.5 text-slate-400"></i>
+            <input type="text" id="modalPatientName" required placeholder="e.g. Rahul Patel" class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm">
+          </div>
+        </div>
+
+        <!-- Phone Number -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">WhatsApp / Mobile Number</label>
+          <div class="relative">
+            <i data-lucide="phone" class="w-4 h-4 absolute left-3.5 top-3.5 text-slate-400"></i>
+            <input type="tel" id="modalPatientPhone" required placeholder="+91 94267 54966" class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm">
+          </div>
+        </div>
+
+        <!-- Clinic Branch Selector -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Preferred Clinic Branch</label>
+          <select id="modalBranch" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm bg-white">
+            <option value="Ghodasar (Main Clinic - Muktjivan Complex)">Ghodasar (Main Clinic - Muktjivan Complex)</option>
+            <option value="South Bopal (Branch Clinic)">South Bopal (Branch Clinic)</option>
+          </select>
+        </div>
+
+        <!-- Treatment Type -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Treatment / Reason</label>
+          <select id="modalTreatment" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm bg-white">
+            <option value="Painless Root Canal (RCT)">Painless Root Canal (RCT)</option>
+            <option value="Dental Implants">Dental Implants</option>
+            <option value="Braces & Clear Aligners">Braces &amp; Clear Aligners</option>
+            <option value="Teeth Whitening & Smile Makeover">Teeth Whitening &amp; Smile Makeover</option>
+            <option value="Tooth Removal / Wisdom Tooth Extraction">Tooth Removal / Wisdom Tooth</option>
+            <option value="Routine Dental Checkup & Cleaning">Routine Dental Checkup &amp; Cleaning</option>
+          </select>
+        </div>
+
+        <!-- Date & Time Row -->
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Preferred Date</label>
+            <input type="date" id="modalDate" required class="w-full px-3 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 text-xs sm:text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Preferred Time Slot</label>
+            <select id="modalTimeSlot" class="w-full px-3 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 text-xs sm:text-sm bg-white">
+              <option value="Morning (10:00 AM - 1:00 PM)">Morning (10 AM - 1 PM)</option>
+              <option value="Evening (5:30 PM - 8:30 PM)">Evening (5:30 PM - 8:30 PM)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full mt-4 py-3.5 rounded-xl bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-700 hover:to-sky-700 text-white font-bold text-sm shadow-lg shadow-teal-600/30 transition flex items-center justify-center gap-2">
+          <i data-lucide="send" class="w-4 h-4"></i> Confirm Appointment on WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="bookingToast" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 max-w-sm hidden transform translate-y-10 transition-all duration-300">
+    <div class="flex items-start space-x-3">
+      <div class="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center text-slate-900 shrink-0">
+        <i data-lucide="check" class="w-5 h-5"></i>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm">Appointment Request Sent!</h4>
+        <p class="text-xs text-slate-300 mt-0.5" id="toastMessage">Redirecting to Dr. Kaushik Raval's WhatsApp...</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Col 1: About & Badge -->
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2 text-white font-bold text-lg">
+            <div class="w-8 h-8 rounded-lg bg-teal-600 flex items-center justify-center text-white">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <span>NILKANTH DENTAL</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Established in 2012 by Dr. Kaushik Raval. Committed to high-precision painless dentistry, world-class dental implants, and transparent affordable pricing in Ahmedabad.
+          </p>
+          <p class="text-xs text-teal-400 font-gujarati">
+            નીલકંઠ દાંતનું દવાખાનું - આધુનિક સારવાર, સુંદર સ્મિત.
+          </p>
+        </div>
+
+        <!-- Col 2: Treatments Quick Links -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Treatments</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#services" class="hover:text-teal-400 transition">Single-Sitting Root Canal (RCT)</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Dental Implants (Titanium)</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Orthodontic Braces &amp; Aligners</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Teeth Whitening &amp; Makeovers</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Gentle Wisdom Tooth Removal</a></li>
+            <li><a href="#services" class="hover:text-teal-400 transition">Composite Tooth Fillings</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Addresses & Contact -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Clinic Locations</h4>
+          <ul class="space-y-3 text-xs">
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-teal-400 shrink-0 mt-0.5"></i>
+              <span><strong>Ghodasar:</strong> Shop No.16, Muktjivan Complex, Smruti Mandir Rd, near Sant Shree Bachuram Ashram, Ahmedabad 380050.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-sky-400 shrink-0 mt-0.5"></i>
+              <span><strong>South Bopal:</strong> Nilkanth Dental Implant Centre, Ahmedabad 380058.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-teal-400 shrink-0"></i>
+              <a href="tel:+919426754966" class="hover:text-white font-semibold text-teal-300">+91 94267 54966</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Timings & Verified Hours -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Consultation Hours</h4>
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 text-xs space-y-2">
+            <div class="flex justify-between">
+              <span class="text-slate-400">Monday – Saturday:</span>
+              <span class="text-slate-200 font-semibold">9:30 AM – 8:30 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Afternoon Break:</span>
+              <span class="text-slate-300">1:00 PM – 5:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Sunday:</span>
+              <span class="text-emerald-400 font-semibold">10:00 AM – 1:00 PM</span>
+            </div>
+          </div>
+          <div class="mt-3 text-[11px] text-slate-500">
+            Emergency trauma &amp; severe toothache appointments given priority.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© 2012 – 2026 Nilkanth Dental Clinic &amp; Implant Centre (નીલકંઠ દાંતનું દવાખાનું). All Rights Reserved.</p>
+        <p>Led by Dr. Kaushik Raval • Ahmedabad, Gujarat</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // State management for SaaS Calculator
+    let currentCalcBaseRate = 3500;
+    let currentCalcName = "Single Sitting Root Canal + Crown";
+    let isGujaratiActive = false;
+
+    // Initialize Lucide Icons after DOM ready
+    window.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+
+      // Set default appointment date to tomorrow
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const dateInput = document.getElementById('modalDate');
+      if (dateInput) {
+        dateInput.value = tomorrow.toISOString().split('T')[0];
+        dateInput.min = new Date().toISOString().split('T')[0];
+      }
+
+      updateCalculatorCost();
+    });
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Modal Control
+    function openBookingModal(treatmentName = '') {
+      const modal = document.getElementById('bookingModal');
+      modal.classList.remove('hidden');
+      if (treatmentName) {
+        const select = document.getElementById('modalTreatment');
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].text.toLowerCase().includes(treatmentName.toLowerCase())) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById('bookingModal');
+      modal.classList.add('hidden');
+    }
+
+    // Appointment Submission to WhatsApp Integration
+    function handleAppointmentSubmit(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('modalPatientName').value;
+      const phone = document.getElementById('modalPatientPhone').value;
+      const branch = document.getElementById('modalBranch').value;
+      const treatment = document.getElementById('modalTreatment').value;
+      const date = document.getElementById('modalDate').value;
+      const slot = document.getElementById('modalTimeSlot').value;
+
+      const message = `Hello Dr. Kaushik Raval,%0A%0AI would like to book a dental appointment at Nilkanth Dental Clinic:%0A%0A• Patient Name: ${encodeURIComponent(name)}%0A• Contact: ${encodeURIComponent(phone)}%0A• Branch: ${encodeURIComponent(branch)}%0A• Treatment: ${encodeURIComponent(treatment)}%0A• Preferred Date: ${encodeURIComponent(date)}%0A• Slot: ${encodeURIComponent(slot)}%0A%0APlease confirm my booking.`;
+
+      // Show toast
+      showToast(`Booking sent for ${name}! Opening WhatsApp...`);
+      closeBookingModal();
+
+      setTimeout(() => {
+        window.open(`https://wa.me/919426754966?text=${message}`, '_blank');
+      }, 900);
+    }
+
+    // Quick Toast Notification
+    function showToast(msg) {
+      const toast = document.getElementById('bookingToast');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.innerText = msg;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-10');
+      }, 50);
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-10');
+        setTimeout(() => toast.classList.add('hidden'), 300);
+      }, 3500);
+    }
+
+    // Interactive Before / After Slider Logic
+    function handleSliderMove(e) {
+      const container = document.getElementById('sliderContainer');
+      const rect = container.getBoundingClientRect();
+      const x = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
+      const percentage = (x / rect.width) * 100;
+      applySliderPosition(percentage);
+    }
+
+    function handleSliderTouch(e) {
+      if (!e.touches[0]) return;
+      const container = document.getElementById('sliderContainer');
+      const rect = container.getBoundingClientRect();
+      const x = Math.max(0, Math.min(e.touches[0].clientX - rect.left, rect.width));
+      const percentage = (x / rect.width) * 100;
+      applySliderPosition(percentage);
+    }
+
+    function applySliderPosition(percentage) {
+      const beforeClip = document.getElementById('beforeClip');
+      const handle = document.getElementById('sliderHandle');
+      beforeClip.style.width = percentage + '%';
+      handle.style.left = percentage + '%';
+    }
+
+    // SaaS Calculator functions
+    function selectCalculatorTreatment(type, basePrice, fullName) {
+      currentCalcBaseRate = basePrice;
+      currentCalcName = fullName;
+
+      // Update button visual states
+      document.querySelectorAll('.calc-btn').forEach(btn => {
+        btn.classList.remove('active', 'border-teal-600', 'bg-teal-50');
+        btn.classList.add('border-slate-200');
+      });
+
+      const selectedBtn = document.querySelector(`.calc-btn[data-type="${type}"]`);
+      if (selectedBtn) {
+        selectedBtn.classList.add('active', 'border-teal-600', 'bg-teal-50');
+        selectedBtn.classList.remove('border-slate-200');
+      }
+
+      updateCalculatorCost();
+    }
+
+    function updateCalculatorCost() {
+      const units = parseInt(document.getElementById('teethCountSlider').value);
+      document.getElementById('teethCountDisplay').innerText = units === 1 ? '1 Tooth / Unit' : `${units} Teeth / Units`;
+
+      const xrayActive = document.getElementById('addonXray').checked;
+      const cleaningActive = document.getElementById('addonCleaning').checked;
+
+      let addonTotal = 0;
+      if (xrayActive) addonTotal += 300;
+      if (cleaningActive) addonTotal += 1200;
+
+      const subtotal = (currentCalcBaseRate * units) + addonTotal;
+
+      document.getElementById('summaryTreatmentName').innerText = currentCalcName;
+      document.getElementById('summaryUnits').innerText = `${units} unit(s)`;
+      document.getElementById('summaryAddons').innerText = `₹${addonTotal.toLocaleString('en-IN')}`;
+      document.getElementById('totalEstimatedCost').innerText = `₹${subtotal.toLocaleString('en-IN')}*`;
+    }
+
+    function bookWithEstimate() {
+      openBookingModal(currentCalcName);
+    }
+
+    // Google Reviews Category Filter
+    function filterReviews(category) {
+      const buttons = document.querySelectorAll('.review-filter');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-category') === category) {
+          btn.classList.add('bg-slate-900', 'text-white', 'border-slate-900');
+          btn.classList.remove('bg-slate-100', 'text-slate-700', 'border-slate-200');
+        } else {
+          btn.classList.remove('bg-slate-900', 'text-white', 'border-slate-900');
+          btn.classList.add('bg-slate-100', 'text-slate-700', 'border-slate-200');
+        }
+      });
+
+      const cards = document.querySelectorAll('.review-card');
+      cards.forEach(card => {
+        const tags = card.getAttribute('data-tags');
+        if (category === 'all' || (tags && tags.includes(category))) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Mock PDF Download for Patient Portal
+    function downloadMockXray() {
+      showToast('Exporting Digital Patient Record & RVG Radiograph...');
+    }
+
+    // Gujarati / English Dual Language Toggle
+    function toggleLanguage() {
+      isGujaratiActive = !isGujaratiActive;
+      const badge = document.getElementById('langText');
+      if (isGujaratiActive) {
+        badge.innerText = 'English';
+        showToast('ગુજરાતી ભાષા સક્રિય કરેલ છે (Gujarati Enabled)');
+      } else {
+        badge.innerText = 'ગુજરાતી';
+        showToast('Switched to English');
+      }
+    }
+  </script>
+</body>
+</html>
